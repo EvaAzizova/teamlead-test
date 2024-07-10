@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Блок 1: Промо -->
+    <section id="promo" class="block">
+        <video autoplay muted loop id="background-video">
+            <source src="img/4748819-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>LevelUp</h1>
+            <img src="img/prod.png" alt="LevelUp">
+            <ul>
+                <li>Характеристика 1</li>
+                <li>Характеристика 2</li>
+                <li>Характеристика 3</li>
+            </ul>
+            <button class="order-btn" data-target="#order-form">Заказать</button>
+        </div>
+    </section>
+
+     <!-- Блок 2: Состав продукта -->
+     <section id="ingredients" class="block pattern-bg">
+        <div class="content">
+            <img src="img/prod.png" alt="LevelUp" class="product-image">
+            <div class="ingredients-columns">
+                <div class="ingredients-list">
+                    <div class="ingredient">
+                        <div class="ingredient-icon">
+                            <img src="img/prod.png" alt="Ingredient 1">
+                        </div>
+                        <p>Ингредиент 1</p>
+                    </div>
+                    <div class="ingredient">
+                        <div class="ingredient-icon">
+                            <img src="img/prod.png" alt="Ingredient 2">
+                        </div>
+                        <p>Ингредиент 2</p>
+                    </div>
+                    <div class="ingredient">
+                        <div class="ingredient-icon">
+                            <img src="img/prod.png" alt="Ingredient 3">
+                        </div>
+                        <p>Ингредиент 3</p>
+                    </div>
+                </div>
+                <div class="ingredients-list">
+                    <div class="ingredient">
+                        <div class="ingredient-icon">
+                            <img src="img/prod.png" alt="Ingredient 4">
+                        </div>
+                        <p>Ингредиент 4</p>
+                    </div>
+                    <div class="ingredient">
+                        <div class="ingredient-icon">
+                            <img src="img/prod.png" alt="Ingredient 5">
+                        </div>
+                        <p>Ингредиент 5</p>
+                    </div>
+                    <div class="ingredient">
+                        <div class="ingredient-icon">
+                            <img src="img/prod.png" alt="Ingredient 6">
+                        </div>
+                        <p>Ингредиент 6</p>
+                    </div>
+                </div>
+            </div>
+            <button class="order-btn" data-target="#order-form">Заказать</button>
+        </div>
+    </section>
+
+    <!-- Блок 3: Отзывы -->
+    <section id="reviews" class="block pattern-bg">
+        <div class="content">
+            <div class="review-carousel">
+                <div class="review">
+                    <img src="img/doctor.png" alt="Reviewer 1">
+                    <h3>Имя 1</h3>
+                    <p>Текст отзыва 1</p>
+                </div>
+                <div class="review">
+                    <img src="img/doctor.png" alt="Reviewer 2">
+                    <h3>Имя 2</h3>
+                    <p>Текст отзыва 2</p>
+                </div>
+                <div class="review">
+                    <img src="img/doctor.png" alt="Reviewer 3">
+                    <h3>Имя 3</h3>
+                    <p>Текст отзыва 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 4: Промо -->
+    <section id="promo-2" class="block gradient-bg">
+        <div class="content">
+            <img src="img/doctor.png" alt="Person with LevelUp">
+            <p>Краткое описание продукта</p>
+            <ul>
+                <li>Характеристика 1</li>
+                <li>Характеристика 2</li>
+                <li>Характеристика 3</li>
+            </ul>
+            <button class="order-btn" data-target="#order-form">Заказать</button>
+        </div>
+    </section>
+
+    <!-- Блок 5: Форма заказа -->
+    <section id="order-form" class="block pattern-bg">
+        <div class="content">
+            <h1>LevelUp</h1>
+            <div id="countdown">30:00</div>
+            <img src="img/prod.png" alt="LevelUp">
+            <p class="price"><span class="old-price">2000 руб.</span> <span class="new-price">1000 руб.</span></p>
+            <form>
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Ваше имя">
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" placeholder="Ваш телефон">
+                <button type="submit">Заказать</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
